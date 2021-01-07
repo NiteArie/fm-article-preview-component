@@ -130,6 +130,7 @@ body {
 }
 
 .container__card__content__about__share__button {
+    position: relative;
     padding: 8px;
     background-color: hsl(210, 46%, 95%);
     border-radius: 50%;
@@ -167,5 +168,35 @@ body {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         flex-basis: 250px;
+    }
+
+    .container__card__content__desc {
+        margin-bottom: 20px;
+    }
+
+    .container__card__content__about__share {
+        padding-bottom: 0;
+    }
+
+    .container__card__content__about__share__menu {
+        top: 0px;
+        left: -305px;
+        bottom: -30px;
+        right: -40px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .container__card__content__about__share__menu > * {
+        margin: 0 10px;
+    }
+
+    .container__card__content__about__share__menu::after {
+        border: 0;
+    }
+
+    .container__card__content__about__share__button.active {
+        background-color: hsl(214, 17%, 51%);
+        
     }
 }
