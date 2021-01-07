@@ -87,9 +87,46 @@ body {
 }
 
 .container__card__content__about__share {
+    position: relative;
     display: flex;
     align-items: flex-end;
     padding-bottom: 5px;
+}
+
+.container__card__content__about__share__menu {
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+}
+
+.container__card__content__about__share__menu::after {
+    position: absolute;
+    bottom: -10px;
+    left: 105px;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+}
+
+.container__card__content__about__share__menu > * {
+    margin-right: 10px;
+}
+
+.container__card__content__about__share__menu__title {
+    color: hsl(212, 23%, 69%);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.container__card__content__about__share__menu__icon {
+    cursor: pointer;
 }
 
 .container__card__content__about__share__button {
@@ -97,6 +134,26 @@ body {
     background-color: hsl(210, 46%, 95%);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.container__card__content__about__share__button:hover {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.container__card__content__about__share__button:hover .container__card__content__about__share__button__image {
+    filter: brightness(3);
+}
+
+.container__card__content__about__share__button.active {
+    background-color: hsl(214, 17%, 51%);
+}
+
+.container__card__content__about__share__button.active .container__card__content__about__share__button__image {
+    filter: brightness(3);
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 710px) {
