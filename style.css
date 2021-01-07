@@ -25,6 +25,7 @@ body {
     background-color: white;
 }
 
+
 .container__card__img {
     flex-basis: 270px;
     background-image: url("images/drawers.jpg");
@@ -96,4 +97,18 @@ body {
     background-color: hsl(210, 46%, 95%);
     border-radius: 50%;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 710px) {
+    .container__card {
+        width: 375px;
+        flex-direction: column;
+    }
+
+    .container__card__img {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        flex-basis: 250px;
+    }
 }
